@@ -1,3 +1,10 @@
+/*
+LINK TO SEE AND TEST CODE:
+https://www.online-java.com/zMmQc8tUSd
+
+There are a few methods in main to demonstrate the constructors as well as a few functions for output.
+*/
+
 //INTERFACE
 
 /**
