@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Main.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #7a7e85;}
+.s4 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Main.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.</span><span class="s1">Scanner</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">Main </span><span class="s2">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+        <span class="s1">Scanner scnr </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s3">// Create an instance of the maintenancelog class</span>
+        <span class="s1">maintenancelog carLog </span><span class="s2">= </span><span class="s0">new </span><span class="s1">maintenancelog</span><span class="s2">();</span>
+
+        <span class="s3">// Prompt the user for car details</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Enter car make: &quot;</span><span class="s2">);</span>
+        <span class="s1">String make </span><span class="s2">= </span><span class="s1">scnr</span><span class="s2">.</span><span class="s1">nextLine</span><span class="s2">();</span>
+        <span class="s1">carLog</span><span class="s2">.</span><span class="s1">setMake</span><span class="s2">(</span><span class="s1">make</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Enter car model: &quot;</span><span class="s2">);</span>
+        <span class="s1">String model </span><span class="s2">= </span><span class="s1">scnr</span><span class="s2">.</span><span class="s1">nextLine</span><span class="s2">();</span>
+        <span class="s1">carLog</span><span class="s2">.</span><span class="s1">setModel</span><span class="s2">(</span><span class="s1">model</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Enter car year: &quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">year </span><span class="s2">= </span><span class="s1">scnr</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+        <span class="s1">carLog</span><span class="s2">.</span><span class="s1">setYear</span><span class="s2">(</span><span class="s1">year</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Enter VIN (as a number): &quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">VIN </span><span class="s2">= </span><span class="s1">scnr</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+        <span class="s1">carLog</span><span class="s2">.</span><span class="s1">setVIN</span><span class="s2">(</span><span class="s1">VIN</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Enter car mileage: &quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">mileage </span><span class="s2">= </span><span class="s1">scnr</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+        <span class="s1">carLog</span><span class="s2">.</span><span class="s1">setMileage</span><span class="s2">(</span><span class="s1">mileage</span><span class="s2">);</span>
+
+        <span class="s3">// Print the maintenance log</span>
+        <span class="s1">carLog</span><span class="s2">.</span><span class="s1">printlog</span><span class="s2">();</span>
+
+        <span class="s3">// Close the scanner</span>
+        <span class="s1">scnr</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+    <span class="s2">}</span>
+<span class="s2">}</span></pre>
+</body>
+</html>
