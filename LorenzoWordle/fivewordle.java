@@ -1,4 +1,4 @@
-public class fiveWordle
+public class fivewordle
 {
   private String wordInserted;
   private String answer = bread;
