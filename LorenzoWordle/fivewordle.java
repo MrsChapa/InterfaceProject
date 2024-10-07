@@ -1,7 +1,7 @@
 public class fivewordle
 {
   private String wordInserted;
-  private String answer = bread;
+  private String answer = "bread";
   private int amountOfTries;
   private int amountOfLetters;
    int getTriesLeft(){
