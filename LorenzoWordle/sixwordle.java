@@ -1,24 +1,25 @@
-public class sixWordle
+public class sixwordle implements wordle
 {
      private String wordInserted;
-  private String answer = tomato;
+  private String answer = "tomato";
   private int amountOfTries;
   private int amountOfLetters;
-   int getTriesLeft(){
-       
+   public int getTriesLeft(){
+        return 6 - amountOfTries;
    }
-   void insertWord(String word)
+   public void insertWord(String word)
        {
            wordInserted = word;
        }
-   String getWord(){
+   public String getWord(){
          return answer;
    }
    
-   Boolean compareWords(){
-       return wordInserted = answer;
+   public boolean compareWords(){
+       amountOfTries++;
+       return wordInserted.equals(answer);
    }
-   int getAmountLetters(){
+   public int getAmountLetters(){
        return 5;
    }
 }
