@@ -1,23 +1,13 @@
 
-interface Wordle
+interface wordle
 {
-   int getTriesLeft(){
-       
-   }
-   void insertWord()
-       {
-           
-       }
-   String getWord(){
-       
-   }
+   int getTriesLeft();
+   void insertWord(String word);
+      
+   String getWord();
    
-   Boolean compareWords(){
-       
-   }
-   int getAmountLetters(){
-       
-   }
+   boolean compareWords();
+   int getAmountLetters();
    
    
    
