@@ -2,22 +2,16 @@ import java.util.Scanner;
 public class Main
 {
     public static void main(String[] args) {
-        int didntVote = 0;
-        User joe = new User();
-        while(didntVote==0){
         Scanner input = new Scanner(System.in);
-        System.out.println("Who do you vote for Bob or Bill(Capatilze the B, key sensitive)");
-        String vote = input.nextLine();
-        System.out.println("What is your age?");
-        int a = input.nextInt();
-        if(vote==""){
-            didntVote++;
-        }
-        else{
-            joe.addVote(vote,a);
-        }
-        }
-        CountVotes counter = new CountVotes(joe.getBobVotes(),joe.getBillVotes());
-        counter.toString();
+        
+        System.out.println("What would you like your first number to be?");
+        int num1 = input.nextInt();
+        
+        System.out.println("What would you like your second number to be?");
+        int num2 = input.nextInt();
+        
+        Calculator calculator = new Calculator(num1, num2);
+        
+        calculator.calculate();
     }
 }
